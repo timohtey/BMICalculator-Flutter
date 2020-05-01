@@ -227,6 +227,7 @@ class _InputPageState extends State<InputPage> {
           BottomButton(
             onTap: () {
               BMI bmi = BMI(height: height, weight: weight);
+              bmi.calculateBMI();
               Navigator.push(
                   context,
                   MaterialPageRoute(

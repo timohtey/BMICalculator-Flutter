@@ -7,8 +7,11 @@ class BMI {
 
   BMI({this.height, this.weight});
 
-  String getBMI() {
+  void calculateBMI() {
     _bmi = weight / pow(height / 100, 2);
+  }
+
+  String getBMI() {
     return _bmi.toStringAsFixed(1);
   }
 
